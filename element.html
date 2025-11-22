@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .d1:first-child{
+        background-color: brown;
+    }
+    .d1:last-child{
+        border: 2px solid red;
+        background-color: aqua;
+    }
+    p:only-child{
+        color: green;
+        font-size: large;
+    }
+    p:nth-of-type(3)
+    {
+        background-color:rgb(249, 170, 249);
+    }
+</style>
+<body>
+    <ul>
+        <li class="d1">one</li>
+        <li class="d1">two</li>
+        <li class="d1">three</li>
+    </ul>
+    <div> 
+        <p>paragraph is only-child</p>
+    </div>
+    <p>paragraph is 1</p>
+    <p>paragraph is 2</p>
+    <p>paragraph is 3</p>
+</body>
+</html>

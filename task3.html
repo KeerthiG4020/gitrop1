@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    /*
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+    }
+    .d1{
+        background-color: rgb(158, 76, 234);
+        height: 150px;
+        width: 150px;
+        border-radius: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease;
+        font-size: 16px;
+        transform-style: preserve-3d;
+    }*/
+    header{
+        color: white;
+        background-color: black;
+        display: flex;
+        
+    }
+    header:hover{
+        background-color: aqua;
+        color: black;
+    }
+    i{
+        color: blueviolet;
+    }
+    #d2{
+        width: 100px;
+        height: 100px;
+        border-radius: 60%;
+    }
+    nav{
+        justify-content: end;
+        margin-top: 30px;
+        margin-left:5%;
+        word-spacing: 40px;
+    }
+    a{
+        color: white;
+        word-spacing: 80px;
+    }
+    a:hover{
+        color: black;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+    }
+    .d1{
+        margin-left: 20px;
+        padding-top: 20%;
+        height: 200px;
+        width: 450px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border: 2px solid;
+        box-shadow: 5px 5px 5px rgb(72, 68, 68);
+    }
+    .d1:hover{
+        transform: translate3d(40px,20px,40px);
+        transition: transform 0.5s ease-in;
+        font-size: 16px;
+        transform-style: preserve-3d;
+    }
+    .d4{
+        padding-top: 20%;
+        padding: 20px;
+        width: 450px;
+        height: 200px;
+        border: 2px solid;
+        background-color: black;
+        color: white;
+        box-shadow: 5px 5px 5px rgb(72, 68, 68);
+    }
+    .d4:hover{
+        transform: translate3d(40px,20px,40px);
+        transition: transform 0.5s ease-in;
+        font-size: 16px;
+        transform-style: preserve-3d;
+    }
+    .c1{
+        border: 2px solid;
+        margin-left: 20px;
+        width: 400px;
+        height: 250px;
+
+    }
+    .c1:hover{
+        transform: scalex(2);
+        transition: transform 0.5s ease-in;
+        font-size: 16px;
+        transform-style: preserve-3d;
+    }
+    aside{
+        display: flex;
+    }
+    #c2,#c3,li{
+        display: flex;
+    }
+    img{
+        border: 2px solid;
+        margin: 20px;
+        width: 350px;
+        height: 300px;
+        box-shadow: 5px 5px 5px black;
+    }
+    img:hover{
+        transform: rotate3d(1,1,0,60deg);
+    }
+    footer:hover{
+        transform: perspective(300px) rotateX(45deg);
+    }
+</style>
+<body>
+    <!--
+    <h1>TRANSFORM ANIMATION (USING HOVER)</h1>
+    <h2>TRANSLATE</h2>
+    <div class="grid">
+        <div class="d1 tra">tra()</div>
+        <div class="d1 trax">traX()</div>
+        <div class="d1 tray">traY()</div>
+        <div class="d1 traz">traZ()</div>
+        <div class="d1 tra3d">tra3D()</div>
+    </div>
+    <h2>ROTATE</h2>
+    <div class="grid">
+        <div class="d1 rot">rot()</div>
+        <div class="d1 rotx">rotX()</div>
+        <div class="d1 roty">rotY()</div>
+        <div class="d1 rotz">rotZ()</div>
+        <div class="d1 rot3d">rot3d()</div>
+    </div>
+    <h2>SCALE</h2>
+    <div class="grid">
+        <div class="d1 scl">scl()</div>
+        <div class="d1 sclx">sclX()</div>
+        <div class="d1 scly">sclY()</div>
+        <div class="d1 sclz">sclZ()</div>
+        <div class="d1 scl3d">scl3D()</div>
+    </div>
+    <h2>SKEW</h2>
+    <div class="grid">
+        <div class="d1 sk">skew()</div>
+        <div class="d1 skx">skewX()</div>
+        <div class="d1 sky">skewY()</div>
+    </div>
+    <h2>PERSPECTIVE</h2>
+    <div class="grid">
+        <div class="d1 per">perspective</div>
+    </div>-->
+    <header>
+        <img src="logo1.png" id="d2">
+        <h2>AC COLLEGE OF ENGINEERING</h2>
+        <nav>
+            <i class="fa-regular fa-house"></i><a href="#home.html">HOME</a>
+            <i class="fa-regular fa-folder"></i><a href="#about.html">ABOUT</a>
+            <i class="fa-solid fa-spa"></i><a href="sports.html">SPORTS</a>
+            <i class="fa-solid fa-graduation-cap"></i><a href="place.html">PLACEMENT</a>
+            <i class="fa-regular fa-user"></i><a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+    <h1>HOME</h1>
+    <aside>
+            <div class="grid d4">
+                <h4>VISION</h4>
+             
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, assumenda nam officiis veniam, officia earum aut nihil tempore similique nulla fuga molestias itaque quam sapiente necessitatibus repellat velit, commodi minus!</p>
+            </div>
+            <img src="college.jpg" class=" grid c1">
+            <div class=" grid d1">
+                <h4>MISSION</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam assumenda sapiente laborum quam repellendus cumque vitae. Necessitatibus, quasi vel enim explicabo cum commodi, dolor quae tenetur aliquam impedit aperiam?</p>
+            </div>
+    </aside>
+    <h2>SPORTS</h2>
+    <img src="g1.jpg">
+    <img src="g2.jpg">
+    <img src="g3.jpg">
+    <img src="g4.jpg">
+    <img src="g5.jpg">
+    <img src="g6.jpg">
+<footer style="background:#002147; color:white; padding:40px 0;">
+  <div style="display:flex; justify-content:space-around; flex-wrap:wrap;">
+    
+    <div>
+      <h3>AC College of Engineering</h3>
+      <p>Accredited by NAAC | Affiliated to Anna University</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="#" style="color:white;">Admission</a></p>
+      <p><a href="#" style="color:white;">Departments</a></p>
+      <p><a href="#" style="color:white;">Placements</a></p>
+      <p><a href="#" style="color:white;">Contact Us</a></p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>123 Main Road, Chennai</p>
+      <p>Email: info@abccollege.edu</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+  </div>
+  
+  <p style="text-align:center; margin-top:20px;">
+    © 2025 AC College of Engineering. All Rights Reserved.
+  </p>
+</footer>
+</body>
+</html>
+<!--
+ TRANSLATE 
+.tra:hover      { transform: translate(60px, 20px); }
+.trax:hover     { transform: translateX(80px); }
+.tray:hover     { transform: translateY(-40px); }
+.traz:hover     { transform: translateZ(60px); }
+.tra3d:hover    { transform: translate3d(40px, 20px, 40px); }
+
+ ROTATE 
+.rot:hover         { transform: rotate(300deg); }
+.rotx:hover        { transform: rotateX(60deg); }
+.roty:hover        { transform: rotateY(60deg); }
+.rotz:hover        { transform: rotateZ(45deg); }
+.rot3d:hover       { transform: rotate3d(1, 1, 0, 60deg); }
+
+ SCALE 
+.scl:hover          { transform: scale(1.4); }
+.sclx:hover         { transform: scaleX(2); }
+.scly:hover         { transform: scaleY(0.5); }
+.sclz:hover         { transform: scaleZ(1.4); }
+.scl3d:hover        { transform: scale3d(1.3, 0.7, 1.2); }
+
+ SKEW 
+.sk:hover           { transform: skew(20deg, 10deg); }
+.skx:hover:hover          { transform: skewX(30deg); }
+.sky:hover          { transform: skewY(-30deg); }
+
+ PERSPECTIVE 
+.per:hover    { transform: perspective(300px) rotateX(45deg); }
+-->
